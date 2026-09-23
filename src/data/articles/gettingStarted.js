@@ -14,733 +14,409 @@ export const gettingStartedArticle = {
   title: "Getting started with CMR",
 
   description:
-    "Learn how Cold Mail Reseller works, set up your account, and understand the core workflow for managing users, domains, mailboxes, orders, subscriptions, and more.",
+    "Understand CMR, choose your partner model, set up your platform, and prepare your wallet before you start using the platform.",
 
   author: "CMR Team",
-
   updated: "September 2026",
 
   heroImage: {
     src: LANDING_PAGE_IMAGE,
-    alt: "Cold Mail Reseller landing page",
+    alt: "Cold Mail Reseller platform",
     caption:
-      "Cold Mail Reseller brings your email infrastructure, customers, orders, subscriptions, billing, and integrations together in one place.",
+      "Cold Mail Reseller brings your email infrastructure, customers, orders, billing, and integrations together in one place.",
   },
 
   introduction:
-    "Welcome to Cold Mail Reseller (CMR). CMR provides the infrastructure and tools needed to manage cold email resources at scale. This guide explains how the platform is structured and walks you through the key steps to get your account ready, fund your wallet, create orders, manage resources, and connect CMR with your existing workflow.",
+    "Welcome to Cold Mail Reseller (CMR). This guide gives you a quick overview of the platform, explains the two ways you can work with CMR, and walks you through the initial setup required before you start managing domains, mailboxes, customers, and other resources.",
 
   sections: [
     {
       id: "what-is-cmr",
+
       title: "What is CMR?",
 
       description:
-        "Understand what Cold Mail Reseller does and what you can manage through the platform.",
+        "Understand what Cold Mail Reseller provides and how it fits into your email infrastructure workflow.",
 
       content: [
         {
           type: "paragraph",
+
           content:
-            "Cold Mail Reseller (CMR) is a platform for managing the infrastructure required for cold email outreach. It provides a centralized workspace where partners can manage customers, domains, mailboxes, subscriptions, warmup services, exports, billing, and integrations.",
+            "Cold Mail Reseller (CMR) provides the infrastructure and tools needed to build and operate a cold email platform. It brings resources such as domains, mailboxes, subscriptions, DNS, warmup, exports, and billing together under a single partner account.",
         },
 
         {
           type: "paragraph",
+
           content:
-            "Instead of managing each part of the infrastructure separately, CMR brings these resources together under one partner account. You can use the CMR dashboard for day-to-day management or use the CMR API and MCP integrations for programmatic and AI-assisted workflows.",
+            "CMR gives partners two ways to work with this infrastructure: the CMR API and the Whitelabel Platform. Both provide access to the underlying CMR infrastructure, while giving you different levels of control over the customer experience.",
         },
 
         {
           type: "callout",
+
           variant: "info",
-          title: "CMR at a glance",
+
+          title: "Two ways to use CMR",
+
           content:
-            "Your partner account is the main workspace. From there, you can manage users and the resources associated with them, while your wallet handles charges for CMR services.",
+            "Choose the API if you want to build your own product or workflow. Choose the Whitelabel Platform if you want a ready-made, branded customer experience without building the platform yourself.",
         },
       ],
     },
 
     {
-      id: "understand-cmr-structure",
-      title: "Understand how CMR is structured",
+      id: "choose-your-partner-model",
+
+      title: "Choose how you want to use CMR",
 
       description:
-        "Learn how your partner account, users, domains, and mailboxes are connected.",
+        "Choose between the CMR API and the Whitelabel Platform based on how much of the product experience you want to build yourself.",
 
       content: [
         {
           type: "paragraph",
+
           content:
-            "CMR follows a simple resource hierarchy. Your partner account sits at the top, and the customers you manage are represented as Users. Resources such as domains and mailboxes are associated with those users.",
+            "CMR supports two primary partner models. The API Partner model gives you programmatic control over CMR infrastructure, while the Whitelabel Partner model gives you a ready-made platform that you can configure and present under your own brand.",
         },
 
         {
-          type: "steps",
-          items: [
-            {
-              id: "partner",
-              title: "Partner",
-              description:
-                "Your partner account is the main CMR workspace. Your API access, wallet, users, orders, and account-level settings are managed at this level.",
-            },
+          type: "heading",
 
-            {
-              id: "users",
-              title: "Users",
-              description:
-                "Users represent the customers or workspaces you manage through CMR. Each user has a unique userId that is used when working with user-specific resources.",
-            },
+          content: "API Partner",
+        },
 
-            {
-              id: "domains",
-              title: "Domains",
-              description:
-                "Domains are associated with users and form an important part of the email infrastructure managed through CMR.",
-            },
+        {
+          type: "paragraph",
 
-            {
-              id: "mailboxes",
-              title: "Mailboxes",
-              description:
-                "Mailboxes are provisioned under domains and can be used with supported email services and outreach platforms.",
-            },
-          ],
+          content:
+            "The CMR API is a REST API for building your own application or workflow on top of CMR infrastructure. You can use it to work with customers, domains, mailboxes, subscriptions, warmup, and other supported CMR resources from your own product.",
+        },
+
+        {
+          type: "paragraph",
+
+          content:
+            "This model is intended for teams that want control over their application experience, workflows, integrations, and automation.",
+        },
+
+        {
+          type: "heading",
+
+          content: "Whitelabel Partner",
+        },
+
+        {
+          type: "paragraph",
+
+          content:
+            "The Whitelabel Platform provides a pre-built customer-facing experience that you can configure under your own brand. You can customize the platform, configure your products and pricing, connect billing, and manage the customer-facing dashboard.",
+        },
+
+        {
+          type: "paragraph",
+
+          content:
+            "This model is intended for partners who want to start reselling without building and maintaining their own customer-facing application.",
         },
 
         {
           type: "callout",
+
           variant: "tip",
-          title: "Keep the hierarchy in mind",
+
+          title: "Choose your model before continuing",
+
           content:
-            "When working with the API, make sure you use the correct userId and resource identifiers. Many user-specific operations depend on the relationship between the partner, user, domain, and mailbox.",
+            "Your partner model determines the product surface you will use. If you are building your own application, continue with the API Partner setup. If you want to use the ready-made customer-facing platform, continue with the Whitelabel Platform setup.",
         },
       ],
     },
 
     {
       id: "set-up-account",
+
       title: "Set up your account",
 
       description:
-        "Review your account settings and prepare your CMR workspace before creating resources.",
+        "Choose the setup guide for the CMR platform you want to use and complete the configuration required to get started.",
 
       content: [
         {
           type: "paragraph",
+
           content:
-            "After signing in to CMR, start by reviewing your account and workspace configuration. Settings contains the controls you need to manage payment information, brand and contact details, team members, API access, webhooks, events, and integrations.",
+            "Once you have chosen your partner model, follow the corresponding setup guide. The API Partner and Whitelabel Partner platforms have different setup flows because they provide different ways of working with CMR.",
         },
 
         {
-          type: "steps",
-          items: [
-            {
-              id: "open-settings",
-              title: "Open Settings",
-              description:
-                "Open the Settings section from the CMR navigation menu.",
-            },
+          type: "heading",
 
-            {
-              id: "review-details",
-              title: "Review your account details",
-              description:
-                "Review your brand, contact, and other workspace information and make sure the details are correct.",
-            },
+          content: "Set up your API Partner Platform",
+        },
 
-            {
-              id: "team-members",
-              title: "Add team members if required",
-              description:
-                "If other people need access to your workspace, invite them from the workspace member settings and assign the appropriate role.",
-            },
+        {
+          type: "paragraph",
 
-            {
-              id: "api-access",
-              title: "Set up API access",
-              description:
-                "If you plan to integrate CMR programmatically, retrieve your CMR API key from Settings → Integrations.",
-            },
-          ],
+          content:
+            "The API Partner Platform is for partners who want to build their own application and integrate CMR through the REST API. The setup guide walks through the initial platform configuration before you begin building your integration.",
         },
 
         {
           type: "learn-more",
+
           items: [
             {
-              id: "settings",
-              title: "Explore Settings",
-              href: "/settings",
+              id: "api-partner-setup",
+
+              title: "Set up your API Partner Platform →",
+
+              description:
+                "Configure your API Partner Platform, complete the initial setup, and get ready to build with the CMR API.",
+
+              href: "/partners/api",
             },
           ],
+        },
+
+        {
+          type: "heading",
+
+          content: "Set up your Whitelabel Platform",
+        },
+
+        {
+          type: "paragraph",
+
+          content:
+            "The Whitelabel Platform is for partners who want a ready-made customer-facing experience under their own brand. The setup guide walks through billing, contact information, wallet settings, products, pricing, domain, and dashboard configuration.",
+        },
+
+        {
+          type: "learn-more",
+
+          items: [
+            {
+              id: "whitelabel-partner-setup",
+
+              title: "Set up your Whitelabel Platform →",
+
+              description:
+                "Configure your Whitelabel Platform, connect billing, set your product and pricing, customize your customer experience, and prepare your platform for launch.",
+
+              href: "/partners/white-label",
+            },
+          ],
+        },
+
+        {
+          type: "callout",
+
+          variant: "info",
+
+          title: "Follow only the setup path for your partner model",
+
+          content:
+            "You do not need to complete both setup guides. Choose the API Partner setup if you are building your own application, or choose the Whitelabel setup if you are using the ready-made customer-facing platform.",
         },
       ],
     },
 
     {
       id: "fund-wallet",
+
       title: "Fund your wallet",
 
       description:
-        "Add balance before purchasing CMR services and creating orders.",
+        "Understand the CMR wallet and prepare your balance for paid services.",
 
       content: [
         {
           type: "paragraph",
+
           content:
-            "CMR uses a partner wallet to handle charges for services such as domain registration and renewal, mailbox subscriptions, warmup, pre-warmup, and placement tests.",
+            "CMR uses a partner wallet to handle charges for supported services. Charges such as domain registration and renewal, mailbox subscriptions, warmup, pre-warmup, and placement tests are deducted from the partner wallet.",
         },
 
         {
-          type: "steps",
+          type: "paragraph",
+
+          content:
+            "Before starting paid operations, make sure your wallet has sufficient balance. Keeping your wallet funded helps prevent operations from failing because of insufficient funds.",
+        },
+
+        {
+          type: "heading",
+
+          content: "Add funds to your wallet",
+        },
+
+        {
+          type: "paragraph",
+
+          content:
+            "You can add balance to your wallet whenever additional funds are required for CMR operations.",
+        },
+
+        {
+          type: "learn-more",
+
           items: [
-            {
-              id: "open-wallet",
-              title: "Open Wallet",
-              description:
-                "Go to the Wallet section from the CMR navigation menu.",
-            },
-
-            {
-              id: "check-wallet",
-              title: "Check your balance",
-              description:
-                "Review your current wallet balance before creating an order or purchasing a service.",
-            },
-
             {
               id: "add-balance",
-              title: "Add balance",
-              description:
-                "Add funds to your wallet when additional balance is required for your CMR services.",
-            },
 
+              title: "Add Balance →",
+
+              description:
+                "Add funds to your CMR wallet and review your available balance.",
+
+              href: "/wallet/add-balance",
+            },
+          ],
+        },
+
+        {
+          type: "heading",
+
+          content: "Configure Auto Top-Up",
+        },
+
+        {
+          type: "paragraph",
+
+          content:
+            "Auto Top-Up can automatically replenish your wallet when your configured balance threshold is reached.",
+        },
+
+        {
+          type: "learn-more",
+
+          items: [
             {
               id: "auto-top-up",
-              title: "Configure Auto Top-Up if needed",
+
+              title: "Enable Auto Top-Up →",
+
               description:
-                "You can enable Auto Top-Up to automatically replenish your wallet when your balance reaches the configured threshold.",
+                "Configure automatic wallet replenishment and manage your Auto Top-Up settings.",
+
+              href: "/wallet/auto-top-up",
             },
           ],
         },
 
         {
           type: "callout",
+
           variant: "tip",
-          title: "Keep enough balance available",
-          content:
-            "Check your wallet before starting an order. Insufficient balance can prevent paid operations from being completed.",
-        },
 
-        {
-          type: "learn-more",
-          items: [
-            {
-              id: "wallet",
-              title: "Explore Wallet",
-              href: "/wallet",
-            },
-          ],
+          title: "Keep sufficient balance available",
+
+          content:
+            "Check your wallet balance before starting paid operations. Some asynchronous operations can fail when the partner wallet does not have sufficient funds.",
         },
       ],
     },
 
     {
-      id: "create-first-order",
-      title: "Create your first order",
+      id: "whats-next",
 
-      description:
-        "Use Orders to request the CMR resources and services you need.",
-
-      content: [
-        {
-          type: "paragraph",
-          content:
-            "Orders are the starting point for provisioning many CMR services. Depending on what you are purchasing, an order can involve domains, mailboxes, subscriptions, warmup, or other available services.",
-        },
-
-        {
-          type: "steps",
-          items: [
-            {
-              id: "open-orders",
-              title: "Open Orders",
-              description:
-                "Go to the Orders section from the CMR navigation menu.",
-            },
-
-            {
-              id: "choose-service",
-              title: "Choose the service you need",
-              description:
-                "Select the type of CMR service or infrastructure you want to provision and review the available configuration options.",
-            },
-
-            {
-              id: "configure-order",
-              title: "Configure the order",
-              description:
-                "Provide the required configuration and resource details for the service you are ordering.",
-            },
-
-            {
-              id: "review-order",
-              title: "Review the order",
-              description:
-                "Check the selected configuration, associated resources, and expected charges before submitting the order.",
-            },
-
-            {
-              id: "submit-order",
-              title: "Submit the order",
-              description:
-                "Submit the order and use the Orders section to track its status and details.",
-            },
-          ],
-        },
-
-        {
-          type: "callout",
-          variant: "info",
-          title: "Some operations are asynchronous",
-          content:
-            "A successful request may mean that the operation has been queued rather than completed immediately. Check the operation status or corresponding webhook for the final result.",
-        },
-      ],
-    },
-
-    {
-      id: "understand-provisioning",
-      title: "Understand provisioning and async operations",
-
-      description:
-        "Know what to expect when CMR operations take time to complete.",
-
-      content: [
-        {
-          type: "paragraph",
-          content:
-            "Some CMR operations are processed asynchronously. This includes operations such as domain registration, mailbox provisioning, renewals, subscription recreation, forwarding, and other workflows where the final result is not available immediately.",
-        },
-
-        {
-          type: "paragraph",
-          content:
-            "For these operations, the API response confirms that the request has been accepted or queued. CMR then sends a webhook when the operation succeeds or fails.",
-        },
-
-        {
-          type: "steps",
-          items: [
-            {
-              id: "submit-request",
-              title: "Submit the operation",
-              description:
-                "Send the request through the CMR dashboard or API.",
-            },
-
-            {
-              id: "receive-response",
-              title: "Read the response",
-              description:
-                "Check the response for the operation status and identifiers such as actionId or orderId.",
-            },
-
-            {
-              id: "wait-webhook",
-              title: "Wait for the webhook",
-              description:
-                "For asynchronous operations, wait for the corresponding success or failure webhook instead of submitting the operation again.",
-            },
-
-            {
-              id: "process-result",
-              title: "Process the final result",
-              description:
-                "Use the webhook payload to determine whether the operation completed successfully or failed.",
-            },
-          ],
-        },
-
-        {
-          type: "callout",
-          variant: "warning",
-          title: "Do not resubmit an in-progress operation",
-          content:
-            "If an asynchronous operation is still being processed, do not repeatedly submit the same request while waiting for its webhook.",
-        },
-      ],
-    },
-
-    {
-      id: "manage-domains-mailboxes",
-      title: "Manage domains and mailboxes",
-
-      description:
-        "Understand the resources that make up your email infrastructure.",
-
-      content: [
-        {
-          type: "paragraph",
-          content:
-            "Domains and mailboxes are core parts of the infrastructure you manage through CMR. Domains are associated with users, and mailboxes are provisioned under domains.",
-        },
-
-        {
-          type: "steps",
-          items: [
-            {
-              id: "domain-management",
-              title: "Manage your domains",
-              description:
-                "Review domains associated with your users and manage supported domain operations such as registration, renewal, DNS configuration, and forwarding.",
-            },
-
-            {
-              id: "dns-management",
-              title: "Configure DNS",
-              description:
-                "Use the available DNS operations to manage records such as SPF, DKIM, and DMARC. DNS changes may require time to propagate.",
-            },
-
-            {
-              id: "mailbox-management",
-              title: "Manage mailboxes",
-              description:
-                "Review mailbox resources associated with your domains and monitor their provisioning status.",
-            },
-
-            {
-              id: "mailbox-status",
-              title: "Wait for mailbox provisioning",
-              description:
-                "Mailbox provisioning can take time. Use the mailbox status or corresponding webhook to determine when the mailbox is ready.",
-            },
-          ],
-        },
-
-        {
-          type: "callout",
-          variant: "warning",
-          title: "Domain deletion",
-          content:
-            "A domain cannot be deleted while mailboxes are associated with it. Remove the associated mailboxes first when the workflow requires domain deletion.",
-        },
-      ],
-    },
-
-    {
-      id: "subscriptions-warmup",
-      title: "Manage subscriptions and warmup",
-
-      description:
-        "Understand recurring services and the warmup options available for mailboxes.",
-
-      content: [
-        {
-          type: "paragraph",
-          content:
-            "Subscriptions are used for recurring CMR services such as mailbox services and related infrastructure. The Subscriptions section lets you review and manage the subscription lifecycle.",
-        },
-
-        {
-          type: "paragraph",
-          content:
-            "CMR also supports mailbox warmup. Warmup gradually increases sending activity to help build mailbox reputation. Warmup can be enabled when ordering a mailbox or added later where supported.",
-        },
-
-        {
-          type: "steps",
-          items: [
-            {
-              id: "review-subscriptions",
-              title: "Review your subscriptions",
-              description:
-                "Open Subscriptions to view the subscriptions associated with your CMR resources and their current status.",
-            },
-
-            {
-              id: "understand-status",
-              title: "Understand subscription status",
-              description:
-                "Review statuses such as ACTIVE, RENEWING, PAST_DUE, CANCELLED, and EXPIRED to understand the current state of a subscription.",
-            },
-
-            {
-              id: "configure-warmup",
-              title: "Configure warmup",
-              description:
-                "Enable warmup for eligible mailboxes when placing an order or add it later where supported.",
-            },
-
-            {
-              id: "manage-warmup",
-              title: "Manage warmup",
-              description:
-                "Use the available controls to pause warmup or permanently disable future warmup billing according to the supported subscription workflow.",
-            },
-          ],
-        },
-
-        {
-          type: "callout",
-          variant: "info",
-          title: "Warmup is not a placement guarantee",
-          content:
-            "Warmup is intended to build sending reputation. CMR does not provide a numeric inbox-placement guarantee.",
-        },
-
-        {
-          type: "learn-more",
-          items: [
-            {
-              id: "subscriptions",
-              title: "Explore Subscriptions",
-              href: "/subscriptions",
-            },
-          ],
-        },
-      ],
-    },
-
-    {
-      id: "exports",
-      title: "Export mailboxes to outreach platforms",
-
-      description:
-        "Connect provisioned mailboxes with supported outreach platforms through Platform Exports.",
-
-      content: [
-        {
-          type: "paragraph",
-          content:
-            "Once your mailboxes are ready, CMR can export mailbox credentials or connect supported accounts to external outreach platforms. Supported credential-based destinations include ReachInbox, Smartlead, Instantly, and EmailBison. OAuth-based flows are also available for supported Google and Microsoft connections.",
-        },
-
-        {
-          type: "steps",
-          items: [
-            {
-              id: "choose-export",
-              title: "Choose an export destination",
-              description:
-                "Select the outreach platform or integration you want to connect your mailbox to.",
-            },
-
-            {
-              id: "provide-details",
-              title: "Provide the required details",
-              description:
-                "Depending on the platform, you may need credentials, workspace information, OAuth details, or additional metadata.",
-            },
-
-            {
-              id: "start-export",
-              title: "Start the export",
-              description:
-                "Submit the export request and check its status rather than repeatedly creating the same export.",
-            },
-
-            {
-              id: "verify-export",
-              title: "Verify the result",
-              description:
-                "Review the export status and resulting details once processing is complete.",
-            },
-          ],
-        },
-
-        {
-          type: "callout",
-          variant: "tip",
-          title: "Keep platform details consistent",
-          content:
-            "For OAuth exports, make sure the provider configuration matches the mailbox service provider. Some platforms also require workspace or organization identifiers.",
-        },
-      ],
-    },
-
-    {
-      id: "webhooks",
-      title: "Configure webhooks",
-
-      description:
-        "Receive real-time updates about asynchronous operations and resource events.",
-
-      content: [
-        {
-          type: "paragraph",
-          content:
-            "Webhooks allow your application to receive updates from CMR without repeatedly polling the API. They are especially useful for asynchronous operations such as provisioning, renewals, exports, and other resource changes.",
-        },
-
-        {
-          type: "steps",
-          items: [
-            {
-              id: "create-webhook",
-              title: "Create a webhook destination",
-              description:
-                "Add a publicly accessible endpoint where CMR can send event notifications.",
-            },
-
-            {
-              id: "select-events",
-              title: "Configure the events",
-              description:
-                "Choose the events your application needs to receive based on the resources and workflows you manage.",
-            },
-
-            {
-              id: "verify-signature",
-              title: "Verify webhook requests",
-              description:
-                "Verify the CMR signature and timestamp included with webhook requests before processing the event.",
-            },
-
-            {
-              id: "process-events",
-              title: "Process events safely",
-              description:
-                "Respond successfully and process longer-running work asynchronously. Use eventId to deduplicate events when the same event is delivered more than once.",
-            },
-          ],
-        },
-
-        {
-          type: "callout",
-          variant: "warning",
-          title: "Always verify webhook authenticity",
-          content:
-            "Validate the webhook signature and timestamp before trusting the event payload. Your endpoint should also respond promptly instead of keeping the webhook request open for long-running work.",
-        },
-      ],
-    },
-
-    {
-      id: "api-and-mcp",
-      title: "Choose how you want to work with CMR",
-
-      description:
-        "Use the CMR dashboard, REST API, or MCP integrations depending on your workflow.",
-
-      content: [
-        {
-          type: "paragraph",
-          content:
-            "CMR can be used directly from the partner dashboard or integrated into your own workflows through the REST API. Supported MCP integrations also allow AI tools to interact with CMR using your partner API access.",
-        },
-
-        {
-          type: "steps",
-          items: [
-            {
-              id: "dashboard-workflow",
-              title: "Use the dashboard",
-              description:
-                "Use the dashboard for manual resource management, reviewing account information, checking orders, and performing administrative tasks.",
-            },
-
-            {
-              id: "api-workflow",
-              title: "Use the REST API",
-              description:
-                "Use the API when CMR needs to be part of a customer-facing application, bulk workflow, scheduled process, or deterministic automation.",
-            },
-
-            {
-              id: "mcp-workflow",
-              title: "Use MCP for AI-assisted operations",
-              description:
-                "Use MCP with supported AI tools for one-off or administrative operations where an AI-assisted workflow is useful.",
-            },
-          ],
-        },
-
-        {
-          type: "callout",
-          variant: "info",
-          title: "Keep your API key secure",
-          content:
-            "MCP integrations use the same CMR partner API key available from Settings → Integrations. Keep your API credentials private and only provide them to trusted environments.",
-        },
-      ],
-    },
-
-    {
-      id: "next-steps",
       title: "What's next?",
 
       description:
-        "Now that you understand the CMR workflow, explore the individual areas of the platform.",
+        "Continue with the CMR documentation for the area you want to configure or manage.",
 
       content: [
         {
           type: "paragraph",
+
           content:
-            "You're ready to start working with CMR. Use the guides below to learn how each major part of the platform works and how to perform common tasks.",
+            "Once you have chosen your partner model, completed the relevant platform setup, and prepared your wallet, you can continue with the documentation for the specific part of CMR you want to use.",
         },
 
         {
           type: "learn-more",
+
           items: [
             {
               id: "dashboard",
-              title: "Explore the Dashboard",
+
+              title: "Explore the Dashboard →",
+
+              description:
+                "Understand the main dashboard and the information available to you.",
+
               href: "/dashboard",
             },
 
             {
+              id: "wallet",
+
+              title: "Manage your Wallet →",
+
+              description:
+                "Manage your balance, payments, invoices, and wallet settings.",
+
+              href: "/wallet",
+            },
+
+            {
               id: "users",
-              title: "Manage Users",
+
+              title: "Manage Users →",
+
+              description:
+                "Create and manage customers under your Partner account.",
+
               href: "/users",
             },
 
             {
               id: "orders",
-              title: "Manage Orders",
+
+              title: "Manage Orders →",
+
+              description:
+                "Create and manage orders and understand the order workflow.",
+
               href: "/orders",
             },
 
             {
               id: "subscriptions",
-              title: "Manage Subscriptions",
+
+              title: "Manage Subscriptions →",
+
+              description:
+                "Manage subscriptions and understand subscription-related workflows.",
+
               href: "/subscriptions",
             },
 
             {
-              id: "wallet",
-              title: "Manage your Wallet",
-              href: "/wallet",
-            },
-
-            {
               id: "settings",
-              title: "Configure Settings",
+
+              title: "Configure Settings →",
+
+              description:
+                "Manage your CMR account, integrations, members, and platform settings.",
+
               href: "/settings",
-            },
-
-            {
-              id: "faqs",
-              title: "Browse FAQs",
-              href: "/faqs",
-            },
-
-            {
-              id: "troubleshooting",
-              title: "Troubleshoot common issues",
-              href: "/troubleshooting",
             },
           ],
         },
 
         {
           type: "callout",
+
           variant: "success",
-          title: "You're all set",
+
+          title: "You're ready to explore CMR",
+
           content:
-            "You now have the basic CMR workflow in place. Explore the individual guides whenever you need help with a specific task or feature.",
+            "Your initial onboarding path is complete. Choose the documentation area that matches your next task and continue from there.",
         },
       ],
     },

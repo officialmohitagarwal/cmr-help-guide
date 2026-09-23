@@ -11,6 +11,7 @@ import Sidebar from "./components/layout/Sidebar";
 import MobileSidebar from "./components/layout/MobileSidebar";
 import Footer from "./components/layout/Footer";
 import SearchModal from "./components/search/SearchModal";
+import ScrollToTop from "./components/navigation/ScrollToTop";
 
 import Home from "./pages/Home";
 import ArticlePage from "./pages/ArticlePage";
@@ -160,6 +161,9 @@ function AppContent() {
 function App() {
   return (
     <BrowserRouter>
+      {/* Scroll to top whenever the route changes */}
+      <ScrollToTop />
+
       <AppContent />
     </BrowserRouter>
   );

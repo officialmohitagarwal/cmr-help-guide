@@ -7,9 +7,7 @@ import LearnMore from "./LearnMore";
 import FAQ from "./FAQ";
 import CodeBlock from "./CodeBlock";
 
-export default function ArticleRenderer({
-  sections = [],
-}) {
+export default function ArticleRenderer({ sections = [] }) {
   return (
     <div>
       {sections.map((section) => (
@@ -58,7 +56,7 @@ function ContentBlock({ block, index }) {
           <Step
             number={block.number ?? index + 1}
             title={block.title}
-            description={block.description}
+            description={block.description ?? block.content}
           />
         </div>
       );
@@ -71,7 +69,7 @@ function ContentBlock({ block, index }) {
               key={step.id || stepIndex}
               number={stepIndex + 1}
               title={step.title}
-              description={step.description}
+              description={step.description ?? step.content}
             />
           ))}
         </div>
@@ -102,8 +100,8 @@ function ContentBlock({ block, index }) {
     case "code":
       return (
         <CodeBlock
-          code={block.content}
-          language={block.language}
+          code={block.content ?? block.code ?? ""}
+          language={block.language ?? "text"}
         />
       );
 
@@ -121,18 +119,14 @@ function ContentBlock({ block, index }) {
     case "learn-more":
       return (
         <div className="mt-7">
-          <LearnMore
-            items={block.items}
-          />
+          <LearnMore items={block.items} />
         </div>
       );
 
     case "faq":
       return (
         <div className="mt-8">
-          <FAQ
-            items={block.items}
-          />
+          <FAQ items={block.items} />
         </div>
       );
 

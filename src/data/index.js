@@ -1,6 +1,7 @@
 import { gettingStartedArticle } from "./articles/gettingStarted";
 import { dashboardArticle } from "./articles/dashboard";
-
+import { whiteLabelPartnerArticle } from "./articles/partners/whiteLabelPartner";
+import { apiPartnerArticle } from "./articles/partners/apiPartner";
 // Wallet
 import { addBalanceArticle } from "./articles/wallet/addBalance";
 import { managePaymentsArticle } from "./articles/wallet/managePayments";
@@ -57,6 +58,8 @@ import { domainTransferCodeArticle } from "./articles/settings/domainTransferReq
 
 export const articles = [
   gettingStartedArticle,
+  whiteLabelPartnerArticle,
+   apiPartnerArticle,
   dashboardArticle,
 
   // Wallet
