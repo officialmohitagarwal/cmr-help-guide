@@ -19,9 +19,8 @@ const API_PARTNER_STEP_6 =
 const API_PARTNER_STEP_7 =
   "https://res.cloudinary.com/jzwc4txa/image/upload/v1790182121/API_Partner_7.png";
 
-  const API_PARTNER_STEP_8 =
+const API_PARTNER_STEP_8 =
   "https://res.cloudinary.com/jzwc4txa/image/upload/v1790182121/API_Partner_8.png";
-
 
 export const apiPartnerArticle = {
   id: "api-partner",
@@ -557,228 +556,40 @@ export const apiPartnerArticle = {
       title: "What you can build with the CMR API",
 
       description:
-        "Explore the main API areas available after completing your Partner setup.",
+        "Explore the main capabilities available through the CMR API after completing your Partner setup.",
 
       content: [
         {
           type: "paragraph",
           content:
-            "After completing your Partner setup, you can use the CMR API to build customer and infrastructure workflows directly into your application.",
-        },
-
-        {
-          type: "heading",
-          content: "Users",
+            "Once your Partner setup is complete, the CMR API gives your application programmatic access to the infrastructure you need to build and operate your own customer experience.",
         },
 
         {
           type: "paragraph",
           content:
-            "Create and manage the customers under your Partner account.",
-        },
-
-        {
-          type: "code",
-          language: "text",
-          code: `Create User
-List Users
-Get User
-Update User
-Delete User`,
-        },
-
-        {
-          type: "heading",
-          content: "Domains",
-        },
-
-        {
-          type: "paragraph",
-          content:
-            "Check domain availability, retrieve domains, check workspace existence, manage forwarding, and remove domains.",
-        },
-
-        {
-          type: "code",
-          language: "text",
-          code: `Get Domains by User
-Get Domain
-Check Domain Availability
-Check Single Domain Availability
-Check Workspace Existence
-Set Domain Forwarding
-Set Email Forwarding
-Delete Domains`,
-        },
-
-        {
-          type: "heading",
-          content: "DNS Management",
-        },
-
-        {
-          type: "paragraph",
-          content:
-            "Read and manage DNS records and nameservers for customer domains.",
-        },
-
-        {
-          type: "code",
-          language: "text",
-          code: `Get DNS Records
-Add DNS Records
-Update DNS Record
-Update Nameservers
-Delete DNS Record`,
-        },
-
-        {
-          type: "heading",
-          content: "Mailboxes and Warmup",
-        },
-
-        {
-          type: "paragraph",
-          content:
-            "Retrieve mailbox information, update mailbox details, and manage mailbox warmup.",
-        },
-
-        {
-          type: "code",
-          language: "text",
-          code: `List Mailboxes
-Get Mailboxes by User
-Get Mailbox
-Update Mailbox Details
-Delete Mailbox
-
-Add Warmup to Mailbox
-Toggle Warmup
-Update Warmup Settings
-Delete Warmup Subscription`,
-        },
-
-        {
-          type: "heading",
-          content: "Orders and Subscriptions",
-        },
-
-        {
-          type: "paragraph",
-          content:
-            "Create and process domain or mailbox orders, then manage the resulting subscriptions.",
-        },
-
-        {
-          type: "code",
-          language: "text",
-          code: `Create Order
-Create Order (JSON)
-Create Mailbox Order
-Process Order
-
-Get Subscriptions
-Renew Subscriptions
-Cancel Subscription
-Toggle Auto-Renewal
-Recreate Subscription`,
-        },
-
-        {
-          type: "heading",
-          content: "Exports",
-        },
-
-        {
-          type: "paragraph",
-          content:
-            "Store platform credentials, retrieve available workspaces, and export mailboxes to supported external platforms. CMR also provides OAuth workflows for Google and Microsoft mailboxes.",
-        },
-
-        {
-          type: "code",
-          language: "text",
-          code: `Get Platform Credentials
-Get Platform Workspaces
-Add Platform Credential
-Export Mailboxes to Platform
-Update Platform Credential
-Remove Platform Credential
-
-Perform OAuth
-Add Client ID to Domains`,
-        },
-
-        {
-          type: "heading",
-          content: "Pre-Warmup and Placement Tests",
-        },
-
-        {
-          type: "paragraph",
-          content:
-            "The API also provides endpoints for ordering pre-warmed domain packages and creating and retrieving mailbox placement tests.",
-        },
-
-        {
-          type: "code",
-          language: "text",
-          code: `Get Pre-Warmup Domains
-Order Pre-Warmup
-
-Create Placement Order
-Get Placement Reports`,
-        },
-
-        {
-          type: "callout",
-          variant: "info",
-          title: "Explore the API Reference",
-          content:
-            "The individual API reference articles contain the request parameters, response structures, and endpoint-specific behavior for each operation.",
-        },
-      ],
-    },
-
-    {
-      id: "authentication-next",
-      title: "Next: Authenticate your API requests",
-
-      description:
-        "Generate your API credentials and make your first authenticated request.",
-
-      content: [
-        {
-          type: "paragraph",
-          content:
-            "With your Partner setup complete, the next step is to generate your API key and learn how CMR authenticates requests.",
+            "You can build workflows around users, domains, DNS, mailboxes, orders, subscriptions, warmup, exports, webhooks, and other CMR services. The API is designed to let you integrate these capabilities directly into your own product and workflows.",
         },
 
         {
           type: "learn-more",
           items: [
             {
-              id: "cmr-api-key",
-              title: "Create a Partner Account & API Key",
+              id: "cmr-api-documentation",
+              title: "Read the CMR API Documentation →",
               description:
-                "Generate your API credentials and learn how to authenticate CMR API requests.",
-              href: "/settings/cmr-api-key",
-            },
-            {
-              id: "api-partner",
-              title: "API Partner",
-              description:
-                "Return to the API Partner setup guide.",
-              href: "/partners/api",
-            },
-            {
-              id: "getting-started",
-              title: "Getting started with CMR",
-              description:
-                "Return to the complete CMR onboarding guide.",
-              href: "/getting-started",
+                "Explore the complete API reference, including available resources, operations, request parameters, responses, authentication, webhooks, sandbox, and other API behavior.",
+              href: "https://docs.coldmailreseller.com/",
             },
           ],
+        },
+
+        {
+          type: "callout",
+          variant: "info",
+          title: "Use the API documentation as your reference",
+          content:
+            "The CMR API Documentation is the detailed reference for integrating with CMR. Use it when you are ready to work with individual API operations and their request and response structures.",
         },
       ],
     },

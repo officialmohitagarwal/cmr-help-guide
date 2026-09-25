@@ -19,11 +19,46 @@ import CategoryPage from "./pages/CategoryPage";
 import FAQsPage from "./pages/FAQsPage";
 import TroubleshootingPage from "./pages/TroubleshootingPage";
 
+// ============================================================
+// Platform Categories
+// ============================================================
+
+import { dashboardCategory } from "./data/dashboard";
+
 import { walletCategory } from "./data/wallet";
-import { usersCategory } from "./data/users";
-import { ordersCategory } from "./data/orders";
-import { subscriptionsCategory } from "./data/subscriptions";
+
+import { usersPlatformCategory } from "./data/userPlatform";
+
+import { ordersPlatformCategory } from "./data/ordersPlatform";
+
+import {
+  subscriptionsCategory,
+  subscriptionsRenewalsCategory,
+} from "./data/subscriptions";
+
 import { settingsCategory } from "./data/settings";
+
+// ============================================================
+// Concept Categories
+// ============================================================
+
+import { domainsCategory } from "./data/domains";
+
+import { billingCategory } from "./data/billing";
+
+import { dnsCategory } from "./data/dns";
+
+import { mailboxesCategory } from "./data/mailboxes";
+
+import { warmupCategory } from "./data/warmup";
+
+// Users & Partner Administration — Concepts
+
+import { usersConcept } from "./data/users.concept";
+
+import { exportsCategory } from "./data/exports";
+
+import { webhooksCategory } from "./data/webhooks";
 
 function AppContent() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -81,7 +116,10 @@ function AppContent() {
         {showSidebar && <Sidebar />}
 
         <Routes>
+          {/* ================================================== */}
           {/* Home */}
+          {/* ================================================== */}
+
           <Route
             path="/"
             element={
@@ -91,27 +129,158 @@ function AppContent() {
             }
           />
 
+          {/* ================================================== */}
+          {/* Platform — Dashboard */}
+          {/* ================================================== */}
+
+          <Route
+            path="/dashboard"
+            element={
+              <CategoryPage
+                category={dashboardCategory}
+              />
+            }
+          />
+
+          {/* ================================================== */}
+          {/* Concept Categories */}
+          {/* ================================================== */}
+
+          <Route
+            path="/concepts/domains"
+            element={
+              <CategoryPage
+                category={domainsCategory}
+              />
+            }
+          />
+
+          <Route
+            path="/concepts/billing-wallet"
+            element={
+              <CategoryPage
+                category={billingCategory}
+              />
+            }
+          />
+
+          <Route
+            path="/concepts/dns"
+            element={
+              <CategoryPage
+                category={dnsCategory}
+              />
+            }
+          />
+
+          <Route
+            path="/concepts/mailboxes-provisioning"
+            element={
+              <CategoryPage
+                category={mailboxesCategory}
+              />
+            }
+          />
+
+          <Route
+            path="/concepts/subscriptions-renewals"
+            element={
+              <CategoryPage
+                category={subscriptionsRenewalsCategory}
+              />
+            }
+          />
+
+          <Route
+            path="/concepts/warmup-deliverability"
+            element={
+              <CategoryPage
+                category={warmupCategory}
+              />
+            }
+          />
+
+          {/* ================================================== */}
+          {/* Concept — Users & Partner Administration */}
+          {/* ================================================== */}
+
+          <Route
+            path="/concepts/users-partner-administration"
+            element={
+              <CategoryPage
+                category={usersConcept}
+              />
+            }
+          />
+
+          {/* ================================================== */}
+          {/* Concept — Exporting Mailboxes */}
+          {/* ================================================== */}
+
+          <Route
+            path="/concepts/exporting-mailboxes"
+            element={
+              <CategoryPage
+                category={exportsCategory}
+              />
+            }
+          />
+
+          {/* ================================================== */}
+          {/* Concept — Webhooks & Events */}
+          {/* ================================================== */}
+
+          <Route
+            path="/concepts/webhooks-events"
+            element={
+              <CategoryPage
+                category={webhooksCategory}
+              />
+            }
+          />
+
+          {/* ================================================== */}
           {/* Platform Categories */}
+          {/* ================================================== */}
+
           <Route
             path="/wallet"
             element={
-              <CategoryPage category={walletCategory} />
+              <CategoryPage
+                category={walletCategory}
+              />
             }
           />
+
+          {/* ================================================== */}
+          {/* Platform — Users */}
+          {/* ================================================== */}
 
           <Route
             path="/users"
             element={
-              <CategoryPage category={usersCategory} />
+              <CategoryPage
+                category={usersPlatformCategory}
+              />
             }
           />
+
+          {/* ================================================== */}
+          {/* Platform — Orders */}
+          {/* ================================================== */}
 
           <Route
             path="/orders"
             element={
-              <CategoryPage category={ordersCategory} />
+              <CategoryPage
+                category={ordersPlatformCategory}
+              />
             }
           />
+
+          {/* ================================================== */}
+          {/* Platform — Subscriptions */}
+          {/* ================================================== */}
 
           <Route
             path="/subscriptions"
@@ -122,14 +291,23 @@ function AppContent() {
             }
           />
 
+          {/* ================================================== */}
+          {/* Platform — Settings */}
+          {/* ================================================== */}
+
           <Route
             path="/settings"
             element={
-              <CategoryPage category={settingsCategory} />
+              <CategoryPage
+                category={settingsCategory}
+              />
             }
           />
 
+          {/* ================================================== */}
           {/* Resources */}
+          {/* ================================================== */}
+
           <Route
             path="/faqs"
             element={<FAQsPage />}
@@ -140,7 +318,10 @@ function AppContent() {
             element={<TroubleshootingPage />}
           />
 
+          {/* ================================================== */}
           {/* Articles */}
+          {/* ================================================== */}
+
           <Route
             path="*"
             element={<ArticlePage />}
@@ -161,7 +342,6 @@ function AppContent() {
 function App() {
   return (
     <BrowserRouter>
-      {/* Scroll to top whenever the route changes */}
       <ScrollToTop />
 
       <AppContent />

@@ -11,6 +11,16 @@ import {
   WalletCards,
   HelpCircle,
   Wrench,
+  Rocket,
+  CircleDollarSign,
+  Globe,
+  Network,
+  Mail,
+  RefreshCw,
+  ShieldCheck,
+  UserRoundCog,
+  Send,
+  Webhook,
 } from "lucide-react";
 
 const sections = [
@@ -21,6 +31,73 @@ const sections = [
         label: "Introduction",
         icon: BookOpen,
         href: "/getting-started",
+      },
+    ],
+  },
+
+  {
+    label: "QUICK SETUP",
+    items: [
+      {
+        label: "Set up your API Partner Platform",
+        icon: Rocket,
+        href: "/partners/api",
+      },
+      {
+        label: "Set up your Whitelabel Partner Platform",
+        icon: Rocket,
+        href: "/partners/white-label",
+      },
+    ],
+  },
+
+  {
+    label: "CONCEPTS",
+    items: [
+      {
+        label: "Billing and Wallet",
+        icon: CircleDollarSign,
+        href: "/concepts/billing-wallet",
+      },
+      {
+        label: "Domains",
+        icon: Globe,
+        href: "/concepts/domains",
+      },
+      {
+        label: "DNS",
+        icon: Network,
+        href: "/concepts/dns",
+      },
+      {
+        label: "Mailboxes and Provisioning",
+        icon: Mail,
+        href: "/concepts/mailboxes-provisioning",
+      },
+      {
+        label: "Subscriptions and Renewals",
+        icon: RefreshCw,
+        href: "/concepts/subscriptions-renewals",
+      },
+      {
+        label: "Warmup and Deliverability",
+        icon: ShieldCheck,
+        href: "/concepts/warmup-deliverability",
+      },
+      {
+        label: "Users & Partner Administration",
+        icon: UserRoundCog,
+        href: "/concepts/users-partner-administration",
+      },
+      {
+        label: "Exporting Mailboxes to Sending Platforms",
+        icon: Send,
+        href: "/concepts/exporting-mailboxes",
+      },
+      {
+        label: "Webhooks & Events",
+        icon: Webhook,
+        href: "/concepts/webhooks-events",
       },
     ],
   },

@@ -123,6 +123,32 @@ function ContentBlock({ block, index }) {
         </div>
       );
 
+    case "external-link":
+      return (
+        <div className="mt-8">
+          <a
+            href={block.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block rounded-xl border border-[var(--border)] bg-[var(--surface-subtle)] p-5 transition-all duration-200 hover:border-[var(--cmr-brand-strong)] hover:bg-[var(--surface-hover)]"
+          >
+            <div className="text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--text-tertiary)]">
+              {block.title}
+            </div>
+
+            <div className="mt-2 text-[17px] font-semibold tracking-[-0.025em] text-[var(--text-primary)] transition-colors group-hover:text-[var(--cmr-brand-strong)]">
+              {block.label}
+            </div>
+
+            {block.description && (
+              <p className="mt-2 max-w-[680px] text-[13px] leading-6 text-[var(--text-secondary)]">
+                {block.description}
+              </p>
+            )}
+          </a>
+        </div>
+      );
+
     case "faq":
       return (
         <div className="mt-8">

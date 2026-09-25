@@ -4,6 +4,7 @@ export const settingsCategory = {
   title: "Settings",
   description:
     "Manage your workspace, team members, branding, pricing, integrations, webhooks, events, and account preferences.",
+
   articles: [
     // General
     {
@@ -69,46 +70,11 @@ export const settingsCategory = {
 
     // MCP
     {
-      id: "settings-mcp-claude-desktop",
-      title: "How to Connect CMR with Claude Desktop",
+      id: "settings-mcp",
+      title: "Connect CMR with MCP",
       description:
-        "Connect Cold Mail Reseller with Claude Desktop through MCP.",
-      slug: "/settings/mcp/claude-desktop",
-    },
-    {
-      id: "settings-mcp-cursor",
-      title: "How to Connect CMR with Cursor",
-      description:
-        "Connect Cold Mail Reseller with Cursor through MCP.",
-      slug: "/settings/mcp/cursor",
-    },
-    {
-      id: "settings-mcp-claude-code",
-      title: "How to Connect CMR with Claude Code",
-      description:
-        "Connect Cold Mail Reseller with Claude Code through MCP.",
-      slug: "/settings/mcp/claude-code",
-    },
-    {
-      id: "settings-mcp-vscode",
-      title: "How to Connect CMR with VS Code",
-      description:
-        "Connect Cold Mail Reseller with VS Code through MCP.",
-      slug: "/settings/mcp/vscode",
-    },
-    {
-      id: "settings-mcp-windsurf",
-      title: "How to Connect CMR with Windsurf",
-      description:
-        "Connect Cold Mail Reseller with Windsurf through MCP.",
-      slug: "/settings/mcp/windsurf",
-    },
-    {
-      id: "settings-mcp-codex-cli",
-      title: "How to Connect CMR with Codex CLI",
-      description:
-        "Connect Cold Mail Reseller with Codex CLI through MCP.",
-      slug: "/settings/mcp/codex-cli",
+        "Connect Cold Mail Reseller with Claude, Cursor, and other supported AI assistants through MCP.",
+      slug: "/settings/mcp",
     },
 
     // Webhook
