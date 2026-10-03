@@ -1,3 +1,4 @@
+
 import {
   BookOpen,
   Rocket,
@@ -49,7 +50,6 @@ export const navigation = [
         description:
           "Set up your API Partner Platform and learn how to get started with CMR's API-based infrastructure.",
       },
-
       {
         id: "white-label-partner",
         title: "Set up your Whitelabel Partner Platform",
@@ -73,7 +73,6 @@ export const navigation = [
         description:
           "Understand wallet charges, mailbox pricing, renewals, volume pricing, and billing behavior.",
       },
-
       {
         id: "domains",
         title: "Domains",
@@ -82,7 +81,6 @@ export const navigation = [
         description:
           "Understand domain registration, status, renewal, forwarding, and domain management in CMR.",
       },
-
       {
         id: "dns",
         title: "DNS",
@@ -91,7 +89,6 @@ export const navigation = [
         description:
           "Understand DNS records, nameservers, propagation, and how DNS is managed through CMR.",
       },
-
       {
         id: "mailboxes-provisioning",
         title: "Mailboxes and Provisioning",
@@ -100,7 +97,6 @@ export const navigation = [
         description:
           "Understand mailbox provisioning, mailbox configuration, and the infrastructure behind customer mailboxes.",
       },
-
       {
         id: "subscriptions-renewals",
         title: "Subscriptions and Renewals",
@@ -109,7 +105,6 @@ export const navigation = [
         description:
           "Understand subscription lifecycle, renewals, pricing changes, cancellation, and recovery.",
       },
-
       {
         id: "warmup-deliverability",
         title: "Warmup and Deliverability",
@@ -118,7 +113,6 @@ export const navigation = [
         description:
           "Understand mailbox warmup, deliverability, placement testing, and related email infrastructure.",
       },
-
       {
         id: "users-partner-administration",
         title: "Users & Partner Administration",
@@ -127,16 +121,14 @@ export const navigation = [
         description:
           "Understand Partner and User scope, customer ownership, and how User administration fits into the CMR platform.",
       },
-
       {
         id: "exports",
         title: "Exporting Mailboxes to Sending Platforms",
-        href: "/concepts/exporting-mailboxes",
+        slug: "/concepts/exporting-mailboxes",
         icon: Send,
         description:
           "Understand how CMR mailboxes are exported to sending platforms using platform credentials or Google and Microsoft OAuth.",
       },
-
       {
         id: "webhooks-events",
         title: "Webhooks & Events",
@@ -160,7 +152,6 @@ export const navigation = [
         description:
           "Understand your CMR dashboard and its key information.",
       },
-
       {
         id: "users",
         title: "Users",
@@ -169,7 +160,6 @@ export const navigation = [
         description:
           "Manage users and understand user-related functionality.",
       },
-
       {
         id: "orders",
         title: "Orders",
@@ -178,7 +168,6 @@ export const navigation = [
         description:
           "Create, manage, and understand your CMR orders.",
       },
-
       {
         id: "subscriptions",
         title: "Subscriptions",
@@ -187,7 +176,6 @@ export const navigation = [
         description:
           "Manage subscriptions and understand subscription details.",
       },
-
       {
         id: "exports",
         title: "Exports",
@@ -196,7 +184,6 @@ export const navigation = [
         description:
           "Export and manage your CMR data.",
       },
-
       {
         id: "wallet",
         title: "Wallet",
@@ -205,7 +192,6 @@ export const navigation = [
         description:
           "Manage your wallet and understand your available balance.",
       },
-
       {
         id: "settings",
         title: "Settings",
@@ -229,7 +215,6 @@ export const navigation = [
         description:
           "Find answers to common questions about CMR.",
       },
-
       {
         id: "troubleshooting",
         title: "Troubleshooting",
