@@ -37,7 +37,7 @@ export const mcpArticle = {
 
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=CMR+Settings",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115529/settingsMcp1.jpg",
           alt: "CMR Settings page",
         },
 
@@ -51,7 +51,7 @@ export const mcpArticle = {
 
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=CMR+MCP+Settings",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115529/settingsMcp2.png",
           alt: "CMR MCP settings page",
         },
 
@@ -65,7 +65,7 @@ export const mcpArticle = {
 
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=Choose+MCP+Client",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115530/settingsMcp3.png",
           alt: "MCP client selection",
         },
 
@@ -79,7 +79,7 @@ export const mcpArticle = {
 
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=MCP+Setup+Instructions",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115530/settingsMcp4.png",
           alt: "MCP setup instructions",
         },
 

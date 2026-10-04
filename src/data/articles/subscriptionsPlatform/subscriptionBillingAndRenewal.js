@@ -28,7 +28,7 @@ export const subscriptionBillingAndRenewalArticle = {
       content: [
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=Subscription+Billing",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115531/subscriptions_billing.png",
           alt: "Subscription billing information",
           caption:
             "The Billing column displays the amount, cycle, purchase date, and renewal date.",
@@ -80,7 +80,7 @@ export const subscriptionBillingAndRenewalArticle = {
       content: [
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=Auto+Renew+Setting",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791116419/subscriptions_autoRenew.png",
           alt: "Auto Renew toggles on the Subscriptions page",
           caption:
             "The Auto Renew column displays the setting for each subscription.",

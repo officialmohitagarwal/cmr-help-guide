@@ -28,7 +28,7 @@ export const subscriptionsOverviewArticle = {
       content: [
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=Subscriptions+Overview",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115531/subscriptions_overview.png",
           alt: "CMR Subscriptions overview page",
           caption:
             "The Subscriptions page displays subscription records, renewal settings, and billing information.",
@@ -94,26 +94,6 @@ export const subscriptionsOverviewArticle = {
         },
       ],
     },
-    {
-      id: "search-and-filter-subscriptions",
-      title: "Search and filter subscriptions",
-      description:
-        "Use the controls above the table to locate specific subscription records.",
-
-      content: [
-        {
-          type: "paragraph",
-          content:
-            "The search field accepts a Subscription ID, User ID, or User Email. The provider and status dropdowns can be used to narrow the displayed records.",
-        },
-        {
-          type: "screenshot",
-          src: "https://placehold.co/1600x900?text=Subscription+Search+and+Filters",
-          alt: "Subscription search and filter controls",
-          caption:
-            "Use search and filters to narrow the subscription list.",
-        },
-      ],
-    },
+    
   ],
 };

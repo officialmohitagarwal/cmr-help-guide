@@ -58,7 +58,7 @@ export const filterSubscriptionsArticle = {
         },
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=Subscription+Filters",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115531/subscriptions_filter.png",
           alt: "Provider and status filters on the Subscriptions page",
           caption:
             "Use the provider and status dropdowns to narrow subscription records.",
@@ -74,12 +74,30 @@ export const filterSubscriptionsArticle = {
       content: [
         {
           type: "heading",
-          content: "Cancelled",
+          content: "All Status",
         },
         {
           type: "paragraph",
           content:
-            "The subscription is displayed with a Cancelled status.",
+            "All the subscriptions are displayed.",
+        },
+        {
+          type: "heading",
+          content: "Active",
+        },
+        {
+          type: "paragraph",
+          content:
+            "The subscription is displayed with a Active status.",
+        },
+        {
+          type: "heading",
+          content: "Renewing",
+        },
+        {
+          type: "paragraph",
+          content:
+            "The subscription is displayed with a Renewing status.",
         },
         {
           type: "heading",
@@ -89,6 +107,15 @@ export const filterSubscriptionsArticle = {
           type: "paragraph",
           content:
             "The subscription is displayed with a Past Due status.",
+        },
+        {
+          type: "heading",
+          content: "Cancelled",
+        },
+        {
+          type: "paragraph",
+          content:
+            "The subscription is displayed with a Cancelled status.",
         },
         {
           type: "heading",

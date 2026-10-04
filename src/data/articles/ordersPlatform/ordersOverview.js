@@ -26,7 +26,7 @@ export const ordersOverviewArticle = {
 
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=CMR+Orders+Overview",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115530/orders_overview.png",
           alt: "CMR Orders overview",
           caption:
             "The Orders section provides a central view of orders, their status, customer, revenue, and charged amount.",

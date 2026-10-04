@@ -26,7 +26,7 @@ export const missingOrderArticle = {
 
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=CMR+Missing+Order",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115530/orders_missingOrder.png",
           alt: "CMR Missing Order option",
           caption:
             "The Missing Order? option is available at the top-right of the Orders page.",

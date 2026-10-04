@@ -47,7 +47,7 @@ export const viewExportDetailsArticle = {
         },
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=Export+Details",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115529/exports_showExportDetails.png",
           alt: "Show control in the export history table",
           caption:
             "Use Show in the Details column to open an export record.",

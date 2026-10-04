@@ -47,7 +47,7 @@ export const searchExportsArticle = {
         },
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=Search+Exports",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115529/exports_findSearch.png",
           alt: "Exports search field",
           caption:
             "Use the search field to find relevant export records.",

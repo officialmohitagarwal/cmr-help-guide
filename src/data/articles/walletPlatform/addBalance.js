@@ -5,7 +5,7 @@ const ADD_BALANCE_IMAGE =
   "https://res.cloudinary.com/jzwc4txa/image/upload/v1789552948/addWalletBalance2.png";
 
 const PAYMENT_FLOW_IMAGE =
-  "https://placehold.co/1200x650/f7f7fa/686773?text=Payment+Flow";
+  "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115532/wallet_addBalance3.png";
 
 export const addBalanceArticle = {
   id: "wallet-add-balance",

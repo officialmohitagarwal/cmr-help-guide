@@ -26,7 +26,7 @@ export const addUserArticle = {
 
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=CMR+Add+User",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115531/users_addUser.png",
           alt: "CMR Add User form",
           caption:
             "The Add User form collects contact, company, phone, and address information.",

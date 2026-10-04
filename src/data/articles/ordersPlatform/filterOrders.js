@@ -26,7 +26,7 @@ export const filterOrdersArticle = {
 
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=CMR+Filter+Orders",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115530/orders_filterByStatus.png",
           alt: "CMR Orders status filters",
           caption:
             "Use the status filters to narrow the orders displayed in the Orders table.",

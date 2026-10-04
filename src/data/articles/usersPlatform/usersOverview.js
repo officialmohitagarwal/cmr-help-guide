@@ -26,7 +26,7 @@ export const usersOverviewArticle = {
 
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=CMR+Users+Overview",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115532/users_overview.png",
           alt: "CMR Users overview",
           caption:
             "The Users section provides a central view of your customers and their associated resources.",

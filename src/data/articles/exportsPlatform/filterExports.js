@@ -57,7 +57,7 @@ export const filterExportsArticle = {
         },
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=Export+Filters",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115529/exports_filter.png",
           alt: "Provider and status filters on the Exports page",
           caption:
             "The Exports page includes separate provider and status filters.",
@@ -74,12 +74,12 @@ export const filterExportsArticle = {
         {
           type: "paragraph",
           content:
-            "Provider: The dropdown defaults to All Providers. The screenshot shows Google as a provider in the export table.",
+            "Provider: The dropdown defaults to All Providers. However you can navigate between the providers (Google / Microsoft).",
         },
         {
           type: "paragraph",
           content:
-            "Status: The dropdown defaults to All Status. The screenshot shows Completed as an export status.",
+            "Status: The dropdown defaults to All Status. However you can navigate between the statuses mentioned (Added Client ID / Pending / Completed).",
         },
         {
           type: "callout",

@@ -26,7 +26,7 @@ export const searchUsersArticle = {
 
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=CMR+Search+Users",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115532/users_findSearch.png",
           alt: "CMR Users search",
           caption:
             "Use the search field to quickly find a customer in the Users section.",

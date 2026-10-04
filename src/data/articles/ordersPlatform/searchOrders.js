@@ -26,7 +26,7 @@ export const searchOrdersArticle = {
 
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=CMR+Search+Orders",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115530/orders_findSearch.png",
           alt: "CMR Search Orders",
           caption:
             "Use the Orders search field to find an order by email, Order ID, or domain.",

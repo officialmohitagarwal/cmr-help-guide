@@ -35,13 +35,13 @@ import { apiVsWhitelabelChoiceArticle } from "./articles/faqs/apiVsWhitelabelCho
 // Wallet
 // ============================================================
 
-import { addBalanceArticle } from "./articles/wallet/addBalance";
-import { managePaymentsArticle } from "./articles/wallet/managePayments";
-import { backupCardArticle } from "./articles/wallet/backupCard";
-import { autoTopUpArticle } from "./articles/wallet/autoTopUp";
+import { addBalanceArticle } from "./articles/walletPlatform/addBalance";
+import { managePaymentsArticle } from "./articles/walletPlatform/managePayments";
+import { backupCardArticle } from "./articles/walletPlatform/backupCard";
+import { autoTopUpArticle } from "./articles/walletPlatform/autoTopUp";
 // import { updateAutoTopUpArticle } from "./articles/wallet/updateAutoTopUp";
 // import { smartRechargeArticle } from "./articles/wallet/smartRecharge";
-import { downloadInvoicesArticle } from "./articles/wallet/downloadInvoices";
+import { downloadInvoicesArticle } from "./articles/walletPlatform/downloadInvoices";
 
 // ============================================================
 // Platform — Users

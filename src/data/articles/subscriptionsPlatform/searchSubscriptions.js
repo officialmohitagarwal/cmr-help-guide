@@ -48,7 +48,7 @@ export const searchSubscriptionsArticle = {
         },
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=Search+Subscriptions",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115531/subscriptions_findSearch.png",
           alt: "Search field on the Subscriptions page",
           caption:
             "Search using a Subscription ID, User ID, or User Email.",

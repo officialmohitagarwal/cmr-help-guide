@@ -26,7 +26,7 @@ export const userDashboardArticle = {
 
         {
           type: "screenshot",
-           src: "https://placehold.co/1600x900?text=CMR+User+Dashboard",
+           src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115532/users_userDashboard.png",
           alt: "CMR User Dashboard",
           caption:
             "The User Dashboard brings together customer resources, activity, billing information, and quick actions.",

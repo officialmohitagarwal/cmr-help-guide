@@ -26,7 +26,7 @@ export const orderDetailsArticle = {
 
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=CMR+Order+Details",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115531/orders_viewOrderDetails.png",
           alt: "CMR Order Details",
           caption:
             "Open an individual order from the action button at the end of its row.",

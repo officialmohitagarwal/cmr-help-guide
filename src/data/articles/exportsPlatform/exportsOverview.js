@@ -28,7 +28,7 @@ export const exportsOverviewArticle = {
       content: [
         {
           type: "screenshot",
-          src: "https://placehold.co/1600x900?text=Exports+Overview",
+          src: "https://res.cloudinary.com/jzwc4txa/image/upload/v1791115529/exports_overview.png",
           alt: "CMR Exports overview page",
           caption:
             "The Exports page displays export history with search, filters, and record details.",
@@ -94,33 +94,6 @@ export const exportsOverviewArticle = {
         },
       ],
     },
-    {
-      id: "search-and-filter-exports",
-      title: "Search and filter export history",
-      description:
-        "Use the controls above the table to narrow the records displayed.",
-
-      content: [
-        {
-          type: "paragraph",
-          content:
-            "Search by email or mailbox to locate a particular export record. You can also use the provider and status dropdowns to narrow the export history.",
-        },
-        {
-          type: "screenshot",
-          src: "https://placehold.co/1600x900?text=Export+Search+and+Filters",
-          alt: "Export search and filter controls",
-          caption:
-            "Use the search field, provider filter, and status filter to narrow export records.",
-        },
-        {
-          type: "callout",
-          variant: "info",
-          title: "Tip",
-          content:
-            "Combine search and filters to narrow the list when reviewing a large export history.",
-        },
-      ],
-    },
+    
   ],
 };
